@@ -1,11 +1,5 @@
 # 🐦 Neural Flappy Bird
 
-> Watch AI birds evolve from chaotic randomness to skilled pipe-navigators using **NEAT** (NeuroEvolution of Augmenting Topologies) — with real-time neural network visualization.
-
-<!-- add demo.gif here -->
-
----
-
 ## ✨ Features
 
 - **NEAT Evolution** — Population of 30 birds evolves neural networks from scratch
@@ -41,6 +35,7 @@ python main.py
 ```
 
 ### Requirements
+
 - Python 3.10+
 - Pygame 2.5.2
 - neat-python 0.92
@@ -50,30 +45,30 @@ python main.py
 
 ## 🎮 Controls
 
-| Key | Action |
-|------|--------|
-| `SPACE` | Pause / Resume |
-| `UP` | Increase speed (1x → 2x → 5x → 10x) |
-| `DOWN` | Decrease speed |
-| `R` | Restart from generation 1 |
-| `S` | Save best genome to file |
-| `L` | Load best genome and watch it play solo |
-| `ESC` | Quit (in showcase mode) |
+| Key     | Action                                  |
+| ------- | --------------------------------------- |
+| `SPACE` | Pause / Resume                          |
+| `UP`    | Increase speed (1x → 2x → 5x → 10x)     |
+| `DOWN`  | Decrease speed                          |
+| `R`     | Restart from generation 1               |
+| `S`     | Save best genome to file                |
+| `L`     | Load best genome and watch it play solo |
+| `ESC`   | Quit (in showcase mode)                 |
 
 ---
 
 ## ⚙️ NEAT Configuration
 
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| `pop_size` | 30 | Number of birds per generation |
-| `fitness_threshold` | 5000 | Fitness score to "solve" the game |
-| `activation` | tanh | Activation function for all nodes |
-| `weight_mutate_rate` | 0.8 | Probability of mutating a connection weight |
-| `node_add_prob` | 0.2 | Probability of adding a new hidden node |
-| `conn_add_prob` | 0.5 | Probability of adding a new connection |
-| `max_stagnation` | 20 | Generations without improvement before species dies |
-| `survival_threshold` | 0.3 | Fraction of species members that survive to reproduce |
+| Parameter            | Value | Description                                           |
+| -------------------- | ----- | ----------------------------------------------------- |
+| `pop_size`           | 30    | Number of birds per generation                        |
+| `fitness_threshold`  | 5000  | Fitness score to "solve" the game                     |
+| `activation`         | tanh  | Activation function for all nodes                     |
+| `weight_mutate_rate` | 0.8   | Probability of mutating a connection weight           |
+| `node_add_prob`      | 0.2   | Probability of adding a new hidden node               |
+| `conn_add_prob`      | 0.5   | Probability of adding a new connection                |
+| `max_stagnation`     | 20    | Generations without improvement before species dies   |
+| `survival_threshold` | 0.3   | Fraction of species members that survive to reproduce |
 
 ---
 
